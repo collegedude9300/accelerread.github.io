@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: #BFFF00;
+  color: black;
+   border: 2px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+</style>
+  </head>
+<body>
+<h3> Madlibs Game  </h3>
+<p> In this game, popups will pop on the screen, and they will prompt you to come up with a noun, verb, adjective, or other types of words to insert. </p>
+<button onclick="madLibsGen()">Madlibs Game</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+function madLibsGen() {
+  let color;
+  let pluralNoun;
+  let celebrity;
+  alert("Hello, welcome to MadLibs! As we all know, MadLibs has been around for many years now, and has a bunch of different themes and stories.")
+  alert("The story of the day is: ' February Blues \n")
+  let respOne = prompt("Please enter a color:","");
+  if (respOne == null || respOne == "") 
+  {
+    color = "User cancelled the prompt.";
+  } else 
+  {
+    color = "Roses are " + respOne + ",";
+  }
+  let respTwo = prompt("Please enter a plural noun:","");
+  if (respTwo == null || respTwo == "") {
+    pluralNoun = "User cancelled the prompt.";
+  } else {
+    pluralNoun = respTwo + " are blue" + ",";
+  }
+    let respThree = prompt("Please enter a celebrity:","");
+  if (respThree == null || respThree == "") {
+    celebrity = "User cancelled the prompt.";
+  } else {
+    celebrity = " I love " + " " + respThree + "," + " and I love you! ";
+  }
+  //getElementById outputs the responses onto the screen
+   document.getElementById("demo1").innerHTML = color;
+   document.getElementById("demo2").innerHTML = pluralNoun;
+   document.getElementById("demo3").innerHTML = celebrity;
+}
+</script>
+
+<a href="games.html"> Go Back to Game List</a>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: yellow;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+  </head>
+<body ng-app="">
+<h2> Level Six Quiz: </h2> 
+<h3> List of words:   </h3>
+<ul>
+<li>  determined      </li>
+<li>  coastal      </li>
+<li> frostbite       </li>
+<li>  voyage      </li>
+<li>  atomic      </li>
+<li> experiment  </li>
+<li>  glacier      </li>
+<li> dungeon  </li>
+</ul>
+<form>
+  The men were 
+ <select ng-model="wordOne">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon
+  </select>
+</form>
+  <div ng-switch="wordOne">
+   <div ng-switch-when="first">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="eighth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  </div>
+  <form>
+  to navigate the cold frozen mountains without risking
+     <select ng-model="wordTwo">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon	
+  </select>
+ </form>
+    <div ng-switch="wordTwo">
+   <div ng-switch-when="third">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="eighth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>  
+	</div>
+<form>	
+  , and falling  
+   <select ng-model="wordThree">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon  	
+  </select>
+.
+</form>
+    <div ng-switch="wordThree">
+    <div ng-switch-when="seventh">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="eighth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="sixth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>  
+	</div>
+	<form>
+ As soon as the men left the plane, they picked up an Uber to drive them home from their 	   
+ <select ng-model="wordFour">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon
+	</select>
+ that they have taken to the mountains.
+ </form>
+     <div ng-switch="wordFour">
+    <div ng-switch-when="fourth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="eighth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>  
+	</div>
+	<form>
+  Beaches are located in 
+   <select ng-model="wordFive">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon 	
+  </select>
+  areas in San Diego.
+  </form>
+      <div ng-switch="wordFive">
+     <div ng-switch-when="second">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="eighth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>   
+	</div>
+	<form>
+ Harry made a science 
+  <select ng-model="wordSix">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon 	
+  </select>
+</form>
+    <div ng-switch="wordSix">
+      <div ng-switch-when="sixth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="eighth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="fourth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div> 
+    </div>
+<form>
+ that figured out the 
+	   <select ng-model="wordSeven">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon 	
+  </select>
+ mass of a robot.
+ </form>
+     <div ng-switch="wordSeven">
+        <div ng-switch-when="fifth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="eighth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="fourth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div> 
+    </div>
+	<form>
+ Gorthram the Morloc lives in a nasty and scary 
+ 	   <select ng-model="wordEight">
+     <option value="">
+    <option value="first"> determined
+    <option value="second"> coastal
+    <option value="third"> frostbite
+    <option value="fourth"> voyage
+    <option value="fifth"> atomic
+    <option value="sixth"> experiment
+    <option value="seventh"> glacier
+    <option value="eighth"> dungeon 	
+  </select>
+ .
+</form>
+   <div ng-switch="wordEight">
+<div ng-switch-when="eighth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="sixth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+      <div ng-switch-when="seventh">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>   
+    </div>
+<p>Do you want to go back to 5th grade vocabulary words? Click HERE:</p>	
+<a href="fifthV.html"><b> Fifth grade vocab </b></a>
+<p> To go back to the  vocab level testing menu, click HERE:</p>
+<a href="vocabHome.html"> <b>Vocab Level Testing Selection </b> </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> <b>HOME </b> </a>
+</body>
+</html>

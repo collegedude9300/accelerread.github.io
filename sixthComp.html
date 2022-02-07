@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: #5da4ff;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h3{
+  text-align: center;
+  color: red;
+}
+</style>
+  </head>
+<body>
+<h2> Welcome to the 6th grade reading comprehension test. </h2> 
+<h4> Story 1: All About the Earth  </h4>
+<p>		We all know about our planet Earth, the only planet containing life. Inside of Earth, there are specific layers of the Earth.
+You can think of layers of the Earth like onions. The layers get denser, the closer to the center of the Earth you get.
+The crust is the thin outer layer of the Earth. Even though it's thin, we have something called the continental crust that is made out of silicon rocks.
+The mantle is the next inner layer that is made out of thicker silica rocks. The tectonic plates are what happends when the crust and the mantle form together.
+The outer core is made out of iron and nickle. The outer core is very hot. The outer core of the Earth is very important because it creates a barrier to protect it
+from the sun's solar wind. The inner core is the same as the outer core because it is made out of the same things, but the inner core is extremely deep.
+</p>
+<body ng-app="">
+  <form>
+  Question 1: Which layer is the hottest part of the Earth?
+<br>
+  <input type="radio" ng-model="sixths1q1" value="sixths1a1"> inner core
+<br>
+  <input type="radio" ng-model="sixths1q1" value="sixths1a2"> outer core
+<br>
+  <input type="radio" ng-model="sixths1q1" value="sixths1a3"> mantle
+  <br><br>
+  Question 2: Which layer is the thin outer layer of the Earth?
+<br>
+  <input type="radio" ng-model="sixths1q2" value="sixths1a1"> outer core
+<br>
+  <input type="radio" ng-model="sixths1q2" value="sixths1a2"> crust
+<br>
+  <input type="radio" ng-model="sixths1q2" value="sixths1a3"> inner core
+  <br><br>
+ Question 3: Why do you think the Earth's layers are like onions? Write on a separate piece of paper.
+<h3> <b>Story 1 Results: </b> </h3>
+</form>
+<div ng-switch="sixths1q1">
+  <div ng-switch-when="sixths1a3">
+       <div class="alert alert-success">
+    <strong>  Story 1: Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixths1a1">
+  <div class="alert alert-danger">
+  <strong> Story 1: Question 1:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="sixths1a2">
+  <div class="alert alert-danger">
+  <strong> Story 1: Question 1:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+   
+<div ng-switch="sixths1q2">
+  <div ng-switch-when="sixths1a1">
+       <div class="alert alert-success">
+    <strong> Story 1: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixths1a2">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="sixths1a3">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<h4> Story 2:   All About Haikus </h4>
+<p>We have all heard about poetry, pieces of writing that rhyme and are used to be creative with your writing.
+Some poetry doesn't need to rhyme to be poetry. In fact, there is a Japanese type of poetry called a haiku.
+In order to form a haiku, we need to follow three steps:
+
+<ol>
+  <li>The first line needs to have 5 sylables.</li>
+  <li>The second line needs to have 7 sylables.</li>
+  <li>The third line needs to have 5 sylables.</li>
+</ol>
+</p>
+<form>
+ <b> Question 1A: Is this a haiku? </b>
+<p>Unfriendly mountain</p>
+<p>An empty, pale bottle skips</p>
+<p>at the perfect chalk </p>
+<br>
+  <input type="radio" ng-model="sixths2q1" value="sixths2a1"> yes
+<br>
+  <input type="radio" ng-model="sixths2q1" value="sixths2a2"> no
+<br>
+Question 1B: Why or why not? Write on a separate piece of paper
+<p><b> Question 2A: Is this a haiku? </b>    </p>
+ <p>A blueberry cake</p>
+ <p>   Is the perfect desert for many people </p>
+ <p>   A blueberry cake </p>
+ <br>
+  <input type="radio" ng-model="sixths2q2" value="sixths2a1"> yes
+<br>
+  <input type="radio" ng-model="sixths2q2" value="sixths2a2"> no
+<br>
+ Question 2B: Why or why not? Write on a separate piece of paper
+ <br>
+ <b>Question 3A: Is this a haiku?  </b>
+<p>  Tedious foreshore </p>
+<p>An eating, kind tiger sleeps </p>
+ <p>whilst watching the chalk   </p>
+ <br>
+  <input type="radio" ng-model="sixths2q3" value="sixths2a1"> yes
+<br>
+  <input type="radio" ng-model="sixths2q3" value="sixths2a2"> no
+<br>
+<h3> <b> Story 2 Results: </b> </h3>
+</form>
+<div ng-switch="sixths2q1">
+  <div ng-switch-when="sixths2a1">
+       <div class="alert alert-success">
+    <strong> Story 2: Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixths2a2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 1:  Try again!</strong>
+  </div>
+  </div>
+   </div>
+   
+<div ng-switch="sixths2q2">
+  <div ng-switch-when="sixths2a2">
+       <div class="alert alert-success">
+    <strong> Story 2: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixths2a1">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2:  Try again!</strong>
+  </div>
+  </div>
+   </div>
+   
+   <div ng-switch="sixths2q3">
+  <div ng-switch-when="sixths2a1">
+       <div class="alert alert-success">
+    <strong> Story 3: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="sixths2a2">
+  <div class="alert alert-danger">
+  <strong>Story 3: Question 3:  Try again!</strong>
+  </div>
+  </div>
+   </div>
+<p> Question 3B: Why or why not? Write on a separate piece of paper </p>
+<p>Do you want to go back to 5th grade comprehension questions? Click HERE:</p>
+<a href="fifthComp.html"> 5th Grade Comprehension</a>
+<p>Do you want to go back to fourth grade comprehension questions? Click HERE:</p>
+<a href="fourthComp.html"> Fourth Grade Comprehension </a>
+<p>Do you want to go back to third grade comprehension questions? Click HERE:</p>
+<a href="thirdComp.html"> Third Grade Comprehension </a>
+<p>Do you want to go back to 1st and 2nd grade comprehension questions? Click HERE:</p>
+<a href="primaryComp.html"> Primary Years (1st and 2nd) Comprehension</a>
+<p> To go back to the  comprehension test menu, click HERE:</p>
+<a href="compHome.html"> Test Selection </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> HOME </a>
+
+
+
+
+</body>
+</html>

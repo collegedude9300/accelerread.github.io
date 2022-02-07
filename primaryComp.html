@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body {
+  background-color: #fbd413;
+}
+a:link, a:visited {
+  background-color: #5da4ff;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h3{
+  text-align: center;
+  color: red;
+}
+</style>
+  </head>
+<body ng-app="">
+<h2> Welcome to the 1st grade and 2nd grade reading comprehension test. </h2> 
+<h4>In this test, we will have three short stories, with four questions each. </h4>
+<br>
+<p> First Grade: </p>
+<h4>Story 1: Greg's Treehouse </h4>
+<p> There once was a boy named Greg who built a treehouse with his friends over the summer on a nice sunny June day. The treehouse was in the backyard. Greg had an oak tree. The tree was very tall.
+Greg and his friends built the house out of wood, with help from his dad. They spent many weeks building the treehouse. The kids were happy when the treehouse was all done.
+The kids had junkfood parties, played games, and did lots of laughing and giggling in the treehouse.  </p>
+<p> Story 1 Questions: </p>
+<form>
+  Question 1:  What did Greg and his friends build?
+<br>
+  <input type="radio" ng-model="s1q1" value="treehouse"> tree house
+<br>
+  <input type="radio" ng-model="s1q1" value="woodhouse"> wood house
+<br>
+  <input type="radio" ng-model="s1q1" value="cheesehouse"> cheese house
+  <br><br>
+   Question 2: Greg and his friends built the house out of _________________
+<br>
+  <input type="radio" ng-model="s1q2" value="wood"> wood
+<br>
+  <input type="radio" ng-model="s1q2" value="tree"> tree
+<br>
+  <input type="radio" ng-model="s1q2" value="grass"> grass
+  <br>
+  <br>
+    Question 3: What season did Greg and his friends build the treehouse?
+<br>
+  <input type="radio" ng-model="s1q3" value="spring">spring
+<br>
+  <input type="radio" ng-model="s1q3" value="winter">winter
+<br>
+  <input type="radio" ng-model="s1q3" value="summer">summer
+  <br>
+  <br>
+Question 4: (inference):
+Why do you think that Greg and his friends need Greg's dad to help them?
+<br>
+  <input type="radio" ng-model="s1q4" value="infa1"> Some of the tools are too dangerous for young kids.
+<br>
+  <input type="radio" ng-model="s1q4" value="infa2"> They didn't feel like building it.
+<br>
+  <input type="radio" ng-model="s1q4" value="infa3"> Their legs hurt.
+  <br>
+  <br>
+     <h3> <b> Story 1 Results: </b> </h3>
+</form>
+<div ng-switch="s1q1">
+  <div ng-switch-when="treehouse">
+       <div class="alert alert-success">
+    <strong> Story 1: Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="woodhouse">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 1:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="cheesehouse">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 1:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s1q2">
+  <div ng-switch-when="wood">
+       <div class="alert alert-success">
+    <strong>Story 1: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="tree">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="grass">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s1q3">
+  <div ng-switch-when="summer">
+       <div class="alert alert-success">
+    <strong>Story 1: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="spring">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 3: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="winter">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 3: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s1q4">
+  <div ng-switch-when="infa1">
+       <div class="alert alert-success">
+    <strong>Story 1: Question 4: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="infa2">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 4: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="infa3">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 4: Try again!</strong>
+   </div>
+    </div>
+   </div>
+   <p> Second Grade: </p>
+   <h4>Story 2: Larry the Lizzard </h4>
+<p> There once was a lizzard named Larry. Lizzards usually run fast, but for some reason, Larry couldn't run as fast as the other lizzards.
+When the other lizzards had races in their class at Lizzard School, Larry would always be in last place and the other lizzards would laugh at him and make fun of him.
+One day, Larry talked with his teacher, Mr. Leo about him not running fast and about others making fun of him.
+Mr. Leo said, "Hey, don't feel bad, Larry! Everyone learns at their own pace. I can help you out afterschool a few days a week until you get better".
+Soon, after a few weeks of practice with running, Larry the Lizzard got better at running. The next day, after his last day of tutoring, during the race,
+Larry won in first place! Everyone was very happy for him and cheered!  </p>
+   
+ <p> Story 2 Questions: </p>
+<form>
+  Question 1:  What animal was Larry?
+<br>
+  <input type="radio" ng-model="s2q1" value="lizzard"> lizzard
+<br>
+  <input type="radio" ng-model="s2q1" value="cat"> cat
+<br>
+  <input type="radio" ng-model="s2q1" value="owl"> owl
+  <br><br>
+   Question 2: What couldn't Larry do as well as the other lizzards?
+   <br>
+  <input type="radio" ng-model="s2q2" value="run"> run fast
+<br>
+  <input type="radio" ng-model="s2q2" value="walk"> walk
+<br>
+  <input type="radio" ng-model="s3q2" value="talk"> talk
+  <br>
+  <br>
+    Question 3: What place did Larry win in before and after the tutoring?
+<br>
+  <input type="radio" ng-model="s2q3" value="s3a1"> last, first
+<br>
+  <input type="radio" ng-model="s2q3" value="s3a2"> first, last
+<br>
+  <input type="radio" ng-model="s2q3" value="s3a3"> both last
+  <br>
+  <br>
+Question 4: (inference): When Larry won in first place, what do you think is going to happen with Larry in the future?
+
+<br>
+  <input type="radio" ng-model="s2q4" value="s2infa1">  He will get worse at running.
+<br>
+  <input type="radio" ng-model="s2q4" value="s2infa2"> He will still need help.
+<br>
+  <input type="radio" ng-model="s2q4" value="s2infa3"> He will get better at running.
+  <br>
+  <br>
+   <h3> <b> Story 2 Results: </b> </h3>
+</form>
+<div ng-switch="s2q1">
+  <div ng-switch-when="lizzard">
+       <div class="alert alert-success">
+    <strong> Story 2: Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 1:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 1:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s2q2">
+  <div ng-switch-when="run">
+       <div class="alert alert-success">
+    <strong>Story 2: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s2q3">
+  <div ng-switch-when="s3a1">
+       <div class="alert alert-success">
+    <strong>Story 2: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="s3a2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 3: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="s3a3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 3: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s2q4">
+  <div ng-switch-when="s2infa3">
+       <div class="alert alert-success">
+    <strong>Story 2: Question 4: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="s2infa1">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 4: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="s2infa2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 4: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<p>Do you want to move on  to 3rd grade comprehension questions? Click HERE:</p>
+<a href="thirdComp.html"> Third Grade Comprehension  Questions </a> 
+<p> To go back to the  comprehension test menu, click HERE:</p>
+<a href="compHome.html"> Test Selection </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> HOME </a>
+</body>
+</html>

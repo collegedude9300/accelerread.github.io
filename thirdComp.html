@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body {
+  background-color: #2BFF00;
+}
+a:link, a:visited {
+  background-color: #5da4ff;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h3{
+  text-align: center;
+  color: red;
+}
+</style>
+  </head>
+<body ng-app="">
+<h2> Welcome to the 3rd grade reading comprehension test. </h2> 
+<h4>In this test, we will have three short stories, with four questions each. </h4>
+<br>
+<h4>Story 1: All About Clouds </h4>
+<p> Clouds are everywhere. There is almost always some form of a cloud in the sky. Clouds can be fun to look at, or scary to look at, depending on the cloud.
+ A cirrus cloud is a very thin cloud that appears when it is clear, or sunny outside.
+A cumulus cloud is a big and fluffy cloud that appears when it's partly cloudy or mostly cloudy. Watch out for a nimbus cloud though, those clouds are black, dark, and stormy!
+Clouds can form in a mysterious and a unique way. 
+The sky can be full of water. People cannot see the water though, since the drops of water are too small. 
+The drops are so small that they have turned into a gas called water
+vapor. As the water vapor goes higher in the sky, the air gets cooler. The cooler air causes the water droplets to start to stick to things. 
+Clouds are very interesting.  </p>
+<p> Story 1 Questions: </p>
+<form>
+  Question 1: What are the three types of clouds?
+<br>
+  <input type="radio" ng-model="thirds1q1" value="grade3s1a1"> nimbus, occulonimbus, and cirrus
+<br>
+  <input type="radio" ng-model="thirds1q1" value="grade3s1a2">nimbus, water vapor, and cumulus
+<br>
+  <input type="radio" ng-model="thirds1q1" value="grade3s1a3"> cumulus, nimbus, and cirrus
+  <br><br>
+   Question 2: What is the main idea of this story?
+<br>
+  <input type="radio" ng-model="thirds1q2" value="grade3s2a1"> Clouds are all around us, and it's important to learn about them
+<br>
+  <input type="radio" ng-model="thirds1q2" value="grade3s2a2"> Nimbus clouds are black, dark, and stormy
+<br>
+  <input type="radio" ng-model="thirds1q2" value="grade3s2a3"> The cooler air causes the water droplets to start to stick to things.
+  <br>
+  <br>
+    <p>Question 3: Write using your own words, and on a separate paper, what each cloud looks like, and what weather each cloud can be found in. </p>
+<p>Question 4: (inference):
+Why do you think nimbus clouds are scary, and what weather do you think nimbus clouds have? </p>
+ <h3> <b> Story 1 Results: </b> </h3>
+</form>
+<div ng-switch="thirds1q1">
+  <div ng-switch-when="grade3s1a3">
+       <div class="alert alert-success">
+    <strong> Story 1: Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="grade3s1a1">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 1:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="grade3s1a2">
+  <div class="alert alert-danger">
+  <strong> Story 1: Question 1:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="thirds1q2">
+  <div ng-switch-when="grade3s2a1">
+       <div class="alert alert-success">
+    <strong>Story 1: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="grade3s2a2">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="grade3s2a3">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2: Try again!</strong>
+   </div>
+    </div>
+   </div>
+   
+   <h4>Story 2: Dani and the Tornado: </h4>
+<p> Once on a Saturday afternoon, Dani was planning on flying her kite high in the sky on a beautiful blue day. 
+As she began flying her kite, a strong gust of wind immediately knocked the kite down into the ground, causing it to spin circular,
+making it go round and round. Then, Dani overheard yelling of panic from her mom and then the two of them ran into the house. 
+Then the power went out for a moment. Then, they heard updates about what has been happening and what to do next.  </p>
+   
+ <p> Story 2 Questions: </p>
+<form>
+  Question 1:  What does the word circular mean?
+<br>
+  <input type="radio" ng-model="s2q1" value="s2a1"> spin around in a circle
+<br>
+  <input type="radio" ng-model="s2q1" value="s2a2"> spin around in a swirl-like shape
+<br>
+  <input type="radio" ng-model="s2q1" value="s2a3"> flops upside down
+  <br><br>
+   Question 2 (inference):
+Why do you think Dani's mom was yelling at her?
+   <br>
+  <input type="radio" ng-model="s2q2" value="s2a1"> She was mad at her for making a mess outside
+<br>
+  <input type="radio" ng-model="s2q2" value="s2a2"> She wanted Dani to hear her because of how bad the storm was
+<br>
+  <input type="radio" ng-model="s3q2" value="s2a3"> Dani was too close to the street
+  <br>
+  <br>
+    Question 3: (inference):
+Where do you think Dani and her mom heard the updates, and when do you think they heard them?
+<br>
+  <input type="radio" ng-model="s2q3" value="s3a1"> From their neighbors after the power was out, and after the storm had calmed down
+<br>
+  <input type="radio" ng-model="s2q3" value="s3a2"> From the news on their phones while the power was out
+<br>
+  <input type="radio" ng-model="s2q3" value="s3a3"> From their neighbors while the power was out
+  <br>
+  <br>
+<p>Question 4: (list/short answer) </p>
+<p>Sequence the events from first to last, in your own words. </p>
+ <form>
+  Event One:
+  <select ng-model="modelone">
+    <option value="">
+    <option value="first"> A strong gust of wind immediately knocked the kite down into the ground.
+    <option value="second"> Dani overheard yelling of panic from her mom and then the two of them ran into the house
+    <option value="third"> The power went out.
+  </select>
+</form>
+
+<div ng-switch="modelone">
+  <div ng-switch-when="first">
+     <h4>CORRECT</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>Try Again</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>Try again</h4>
+  </div>
+</div>
+  Event Two:
+  <select ng-model="modeltwo">
+   <option value="">
+    <option value="first"> A strong gust of wind immediately knocked the kite down into the ground.
+    <option value="second"> Dani overheard yelling of panic from her mom and then the two of them ran into the house
+    <option value="third"> The power went out.
+  </select>
+
+
+<div ng-switch="modeltwo">
+  <div ng-switch-when="first">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>CORRECT</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>Try again</h4>
+  </div>
+</div>
+ Event Three:
+  <select ng-model="modelthree">
+   <option value="">
+    <option value="first"> A strong gust of wind immediately knocked the kite down into the ground.
+    <option value="second"> Dani overheard yelling of panic from her mom and then the two of them ran into the house.
+    <option value="third"> The power went out.
+  </select>
+
+<div ng-switch="modelthree">
+  <div ng-switch-when="first">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>CORRECT</h4>
+  </div>
+</div>
+ <h3> <b> Story 2 Results: </b> </h3> 
+</form>
+<div ng-switch="s2q1">
+  <div ng-switch-when="s2a1">
+       <div class="alert alert-success">
+    <strong> Story 2: Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="s2a2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 1:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="s2a3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 1:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s2q2">
+  <div ng-switch-when="s2a2">
+       <div class="alert alert-success">
+    <strong>Story 2: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="s2a1">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="s2a3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="s2q3">
+  <div ng-switch-when="s3a1">
+       <div class="alert alert-success">
+    <strong>Story 2: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="s3a2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 3: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="s3a3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 3: Try again!</strong>
+   </div>
+    </div>
+   </div>
+ 
+  <h4>Story 3: How to Make Ice Cream: </h4>
+<p> Ice cream is very popular, especially with kids, but all ages equally enjoy this yummy treat! 
+Many don't know that they can make their own ice cream from home. Here are some simple steps to make your own ice cream:
+ 1. First, gather your ingrediants. The ingrediants are:  1 cup of milk, 2 tablespoons of sugar, and 1/2 teaspoon of vanilla.
+ Also, gather two bags, one small bag, and one big bag. Also, you will need 2 cups of  ice, and 1/3 cup of salt.
+2. For the small bag, combine the mlik, the sugar, and vanilla, and close it up firmly. For the larger bag, combine the salt and the ice. 
+3.  Put the small bag in the larger bag and shake it up firmly for 5 minutes.</p>
+
+ <p> Story 3 Question: Sequencing </p>
+ <p> Put the events in order from first to last. </p>
+   <form>
+  Event One:
+  <select ng-model="modelone">
+    <option value="">
+    <option value="first"> Gather your ingrediants
+    <option value="second"> Combine your ingrediants in the bags
+    <option value="third"> Put the small bag in the larger bag and shake it up firmly for 5 minutes
+  </select>
+</form>
+
+<div ng-switch="modelone">
+  <div ng-switch-when="first">
+     <h4>CORRECT</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>Try Again</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>Try again</h4>
+  </div>
+</div>
+  Event Two:
+  <select ng-model="modeltwo">
+   <option value="">
+    <option value="first"> Gather your ingrediants
+    <option value="second"> Combine your ingrediants in the bags
+    <option value="third"> Put the small bag in the larger bag and shake it up firmly for 5 minutes
+  </select>
+
+
+<div ng-switch="modeltwo">
+  <div ng-switch-when="first">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>CORRECT</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>Try again</h4>
+  </div>
+</div>
+ Event Three:
+  <select ng-model="modelthree">
+   <option value="">
+    <option value="first"> Gather your ingrediants
+    <option value="second"> Combine your ingrediants in the bags
+    <option value="third"> Put the small bag in the larger bag and shake it up firmly for 5 minutes
+  </select>
+
+<div ng-switch="modelthree">
+  <div ng-switch-when="first">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>CORRECT</h4>
+  </div>
+</div>
+<p>Do you want to move on to 4th grade comprehension questions? Click HERE:</p>
+<a href="fourthComp.html"> Fourth Grade Comprehension </a>
+<p>Do you want to go back to 1st and 2nd grade comprehension questions? Click HERE:</p>
+<a href="primaryComp.html"> Primary Years (1st and 2nd) Comprehension </a>
+<p> To go back to the  comprehension test menu, click HERE:</p>
+<a href="compHome.html"> Test Selection </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> HOME </a>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> Hangman Game</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hangman.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: yellow;
+  color: black;
+   border: 2px solid black;
+  padding: 10px 10px;
+  text-align: center;
+ font-weight: bold;
+  display: inline-block;
+}
+</style>
+  </head>
+<body ng-app class= "ng-scope">
+<div class="wrapper">
+    <p>Use the alphabet below to guess the word, or click HINT to get a clue. </p>
+</div>
+<div class="wrapper">
+    <div id="buttons">
+    </div>
+<br><br><br>	
+    <p id="categoryName"></p>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p>
+    <p id="clue">Clue -</p> 
+     <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+    <div class="container">
+      <button id="hint">HINT</button>
+      <button id="reset">Play again</button>
+    </div>
+</div>
+
+<a href="games.html"> Go Back to Game List</a>
+ <script src="js/hangman.js"> </script>
+</body>
+</html>
+
+

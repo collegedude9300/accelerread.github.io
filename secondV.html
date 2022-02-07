@@ -1,0 +1,312 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: yellow;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+  </head>
+<body ng-app="">
+<h2> Level Two Quiz: </h2> 
+<h3> List of words:   </h3>
+<ul>
+<li>  language      </li>
+<li>  expensive      </li>
+<li>  elevator      </li>
+<li>  repair      </li>
+<li>  mistake      </li>
+<li>  return      </li>
+</ul>
+<form>
+ Joey made a
+ <select ng-model="wordOne">
+     <option value="">
+    <option value="first"> language
+    <option value="second"> expensive
+    <option value="third"> elevator
+    <option value="fourth"> repair
+    <option value="fifth"> mistake
+    <option value="sixth"> return	
+  </select>
+ , and  accidently tripped, and fell and broke his dad's lamp.
+</form>
+<div ng-switch="wordOne">
+ <div ng-switch-when="fifth">
+	 <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>
+ It was very 
+ <select ng-model="wordTwo">
+      <option value="">
+    <option value="first"> language
+    <option value="second"> expensive
+    <option value="third"> elevator
+    <option value="fourth"> repair
+    <option value="fifth"> mistake
+    <option value="sixth"> return	
+ </select>
+  to buy a new one. 
+  </form>
+  <div ng-switch="wordTwo">
+  <div ng-switch-when="second">
+       <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  </div>
+  <form>
+  Instead of buying a new one, his dad decided to
+  <select ng-model="wordThree">
+      <option value="">
+    <option value="first"> language
+    <option value="second"> expensive
+    <option value="third"> elevator
+    <option value="fourth"> repair
+    <option value="fifth"> mistake
+    <option value="sixth"> return	
+ </select>
+  it. 
+  </form>
+  <div ng-switch="wordThree">
+  <div ng-switch-when="fourth">
+   <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  </div>
+  <form>
+An
+ <select ng-model="wordFour">
+      <option value="">
+    <option value="first"> language
+    <option value="second"> expensive
+    <option value="third"> elevator
+    <option value="fourth"> repair
+    <option value="fifth"> mistake
+    <option value="sixth"> return	
+ </select>
+ goes up and down. It is much easier than walking all of the time.
+ </form>
+ <div ng-switch="wordFour">
+ <div ng-switch-when="third">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+ </div>
+ <form>
+ Kyoshi is from Japan. He learned English as his second
+ <select ng-model="wordFive">
+    <option value="">
+    <option value="first"> language
+    <option value="second"> expensive
+    <option value="third"> elevator
+    <option value="fourth"> repair
+    <option value="fifth"> mistake
+    <option value="sixth"> return	
+ </select>
+ .
+ </form>
+  <div ng-switch="wordFive">
+   <div ng-switch-when="first">
+ <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+   <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div> 
+  </div>
+  <div ng-switch-when="fifth">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div> 
+  </div>
+    <div ng-switch-when="sixth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div>
+  </div> 
+</div>
+<form>  
+ Robert needs to
+<select ng-model="wordSix">
+    <option value="">
+    <option value="first"> language
+    <option value="second"> expensive
+    <option value="third"> elevator
+    <option value="fourth"> repair
+    <option value="fifth"> mistake
+    <option value="sixth"> return
+</select>
+ his library book.
+</form>
+<div ng-switch="wordSix">
+ <div ng-switch-when="sixth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<p>Do you want to move on to 3rd grade vocabulary words? Click HERE:</p>	
+<a href="thirdV.html"> <b>Third Grade Vocab</b></a>
+<p>Do you want to go back to 1st grade vocabulary words? Click HERE:</p>	
+<a href="firstV.html"> <b>First Grade Vocab</b></a>
+<p> To go back to the  vocab level testing menu, click HERE:</p>
+<a href="vocabHome.html"> <b>Vocab Level Testing Selection </b> </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> <b> HOME </b> </a>
+</body>
+</html>

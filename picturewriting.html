@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: #BFFF00;
+  color: black;
+   border: 2px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+  </head>
+<body>
+<h2> Welcome to Picture Writing!</h2>
+<h1>Picture #1: </h1>
+<img src="pictureone.jpg">
+<br>
+<button onclick="pictureOne()">Picture One Prompt</button>
+<p id="demo1"></p>
+<script>
+  alert("Hello, welcome to Picture Writing, a game where you get a few pictures, and you need to describe using words what the picture is.");
+  alert("When you level up, you will also talk about the main idea of the picture too.");
+function pictureOne() 
+{
+let resultOne;
+  let respOne = prompt("Please describe what is happening in the picture", "");
+  if (respOne == null || respOne == "") 
+  {
+    resultOne = "User cancelled the prompt.";
+	alert(resultOne);
+  } 
+  else 
+  {
+    resultOne = respOne;
+  }
+     document.getElementById("demo1").innerHTML = respOne;
+  }
+</script>
+<h1>Picture #2: </h1>
+<img src="picturetwo.jpg">
+<br>
+<button onclick="pictureTwo()">Picture Two Prompt</button>
+<p id="demo2"></p>
+<script>
+function pictureTwo() 
+{
+let resultTwo;
+  alert("Here is the second picture:")
+  let respTwo = prompt("Please describe what is happening in the picture");
+  if (respTwo == null || respTwo == "") 
+  {
+    resultTwo = "User cancelled the prompt.";
+	alert(resultTwo);
+  } 
+  else 
+  {
+    resultTwo = respTwo;
+  }
+     document.getElementById("demo2").innerHTML = respTwo;
+  }
+</script>
+
+<h1>Picture #3: </h1>
+<img src="picturethree.jpg">
+<br>
+<button onclick="pictureThree()">Picture Three Prompt</button>
+<p id="demo3"></p>
+<script>
+function pictureThree() 
+{
+let resultThree;
+  alert("Here is the third picture:")
+  let respThree = prompt("Please describe what is happening in the picture");
+  if (respThree == null || respThree == "") 
+  {
+    resultThree = "User cancelled the prompt.";
+	alert(resultThree);
+  } 
+  else 
+  {
+    resultThree = respThree;
+  }
+     document.getElementById("demo3").innerHTML = respThree;
+  }
+</script>
+
+<h1>Picture #4: </h1>
+<img src="picturefour.jpg">
+<br>
+<button onclick="pictureFour()">Picture Four Prompt</button>
+<p id="demo4"></p>
+<script>
+function pictureFour() 
+{
+let resultFour;
+  alert("Here is the fourth picture:")
+  let respFour = prompt("Please describe what is happening in the picture");
+  if (respFour == null || respFour == "") 
+  {
+    resultFour = "User cancelled the prompt.";
+	alert(resultFour);
+  } 
+  else 
+  {
+    resultFour = respFour;
+  }
+     document.getElementById("demo4").innerHTML = respFour;
+  }
+</script>
+
+<br><br><br><br>
+<p> Do you feel like you're ready to go on to sentences? If so, click on the button below to go to "Sentence Writing"</p>
+<a href="sentencewriting.html"> <b> Sentence Writing </b></a> <br><br>
+<a href="games.html"> <b> Go Back to Games </b></a>
+<br><br>
+<a href="index.html"> <b> Go Back to Home </b></a>
+</body>
+</html>

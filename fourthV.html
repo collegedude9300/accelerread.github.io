@@ -1,0 +1,312 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: yellow;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+  </head>
+<body ng-app="">
+<h2> Level Four Quiz: </h2> 
+<h3> List of words:   </h3>
+<ul>
+<li>  joyous      </li>
+<li>  adventurous      </li>
+<li>   cautious     </li>
+<li>  anxiety      </li>
+<li>  completion      </li>
+<li>  geography      </li>
+</ul>
+<form>
+During the last week of school, lots of kids in Mr. Wilson's fifth grade class had 
+ <select ng-model="wordOne">
+     <option value="">
+    <option value="first"> joyous
+    <option value="second"> adventurous
+    <option value="third"> cautious
+    <option value="fourth"> anxiety
+    <option value="fifth"> completion
+    <option value="sixth"> geography	
+  </select>
+ about the 
+ </form>
+ <div ng-switch="wordOne">
+  <div ng-switch-when="fourth">
+   <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>
+ <select ng-model="wordTwo">
+      <option value="">
+    <option value="first"> joyous
+    <option value="second"> adventurous
+    <option value="third"> cautious
+    <option value="fourth"> anxiety
+    <option value="fifth"> completion
+    <option value="sixth"> geography	
+  </select>
+ test about filling up the US map and writing the capitals down.
+ </form>
+ <div ng-switch="wordTwo">
+ <div ng-switch-when="sixth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+ </div>
+ <form>
+ After the
+ <select ng-model="wordThree">
+      <option value="">
+    <option value="first"> joyous
+    <option value="second"> adventurous
+    <option value="third"> cautious
+    <option value="fourth"> anxiety
+    <option value="fifth"> completion
+    <option value="sixth"> geography
+ </select>
+ </form>
+ <div ng-switch="wordThree">
+  <div ng-switch-when="fifth">
+	 <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+ </div>
+ of the test, the students started to packup their things, as the bell was about to ring shortly.
+ <form>
+  As summer vacation started immediately after the bell rang, everyone felt
+   <select ng-model="wordFour">
+      <option value="">
+    <option value="first"> joyous
+    <option value="second"> adventurous
+    <option value="third"> cautious
+    <option value="fourth"> anxiety
+    <option value="fifth"> completion
+    <option value="sixth"> geography
+ </select> 
+  , as they happily ran out the door.
+  </form>
+  <div ng-switch="wordFour">
+    <div ng-switch-when="first">
+ <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+   <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div> 
+  </div>
+  <div ng-switch-when="fifth">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div> 
+  </div>
+    <div ng-switch-when="sixth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div>
+  </div> 
+  </div>
+  <form>
+ John and his family were feeling
+   <select ng-model="wordFive">
+      <option value="">
+    <option value="first"> joyous
+    <option value="second"> adventurous
+    <option value="third"> cautious
+    <option value="fourth"> anxiety
+    <option value="fifth"> completion
+    <option value="sixth"> geography
+ </select> 
+
+, as they started to plan their roadtrip to Arizona to go hiking.
+</form>
+<div ng-switch="wordFive">
+ <div ng-switch-when="second">
+       <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>
+ During hikes, it's very important to be
+   <select ng-model="wordSix">
+      <option value="">
+    <option value="first"> joyous
+    <option value="second"> adventurous
+    <option value="third"> cautious
+    <option value="fourth"> anxiety
+    <option value="fifth"> completion
+    <option value="sixth"> geography
+ </select> 
+ , and walk on the trail instead of run, to avoid falling down.
+</form>
+<div ng-switch="wordSix">
+ <div ng-switch-when="third">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<p>Do you want to move on to 5th grade vocabulary words? Click HERE:</p>	
+<a href="fifthV.html"><b> Fifth grade vocab</b></a>
+<p>Do you want to go back to 3rd grade vocabulary words? Click HERE:</p>	
+<a href="thirdV.html"> <b>Third grade vocab</b></a>
+<p> To go back to the  vocab level testing menu, click HERE:</p>
+<a href="vocabHome.html"> <b>Vocab Level Testing Selection </b> </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> <b>HOME</b> </a>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<html>
+<head>
+<title> Test Level One</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: yellow;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+}
+</style>
+  </head>
+<body ng-app="">
+<h2> Level One Vocabulary Quiz: </h2> 
+<h3> List of words:   </h3>
+<ul>
+<li>  camera      </li>
+<li>  enjoy      </li>
+<li>  principal      </li>
+<li>  hospital      </li>
+<li>  vegetable      </li>
+<li>  careful      </li>
+</ul>
+<form>
+During the walk on the park, Bobby used his
+  <select ng-model="wordOne">
+    <option value="">
+    <option value="first"> camera
+    <option value="second"> enjoy
+    <option value="third"> principal
+    <option value="fourth"> hospital
+    <option value="fifth"> vegetable
+    <option value="sixth"> careful	
+  </select>
+ to take a picture of the small bird!
+ </form>
+ <div ng-switch="wordOne">
+  <div ng-switch-when="first">
+ <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+   <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div> 
+  </div>
+  <div ng-switch-when="fifth">
+     <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div> 
+  </div>
+    <div ng-switch-when="sixth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong>
+  </div>
+  </div>
+</div>
+<form>
+Mr. Barden, the
+  <select ng-model="wordTwo">
+    <option value="">
+    <option value="first"> camera
+    <option value="second"> enjoy
+    <option value="third"> principal
+    <option value="fourth"> hospital
+    <option value="fifth"> vegetable
+    <option value="sixth"> careful	
+  </select>
+ is in charge of the whole school!
+ </form>
+  <div ng-switch="wordTwo">
+  <div ng-switch-when="third">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+        <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>
+If you don't be
+ <select ng-model="wordThree">
+    <option value="">
+    <option value="first"> camera
+    <option value="second"> enjoy
+    <option value="third"> principal
+    <option value="fourth"> hospital
+    <option value="fifth"> vegetable
+    <option value="sixth"> careful	
+  </select>
+  , and  wear your helmet,
+  </form>
+  <div ng-switch="wordThree">
+  <div ng-switch-when="sixth">
+     <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+      <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fifth">
+    <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>	
+  you can really hurt your head and go to the
+   <select ng-model="wordFour">
+    <option value="">
+    <option value="first"> camera
+    <option value="second"> enjoy
+    <option value="third"> principal
+    <option value="fourth"> hospital
+    <option value="fifth"> vegetable
+    <option value="sixth"> careful	
+  </select>
+  </form>
+    <div ng-switch="wordFour">
+  <div ng-switch-when="fourth">
+   <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+	<div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>
+Lots of kids really 
+   <select ng-model="wordFive">
+    <option value="">
+    <option value="first"> camera
+    <option value="second"> enjoy
+    <option value="third"> principal
+    <option value="fourth"> hospital
+    <option value="fifth"> vegetable
+    <option value="sixth"> careful	
+  </select>
+playing in the snow, and having fun in the winter!
+</form>
+    <div ng-switch="wordFive">
+  <div ng-switch-when="second">
+       <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="third">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="fourth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+    	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<form>
+A carrot is a 
+   <select ng-model="wordSix">
+    <option value="">
+    <option value="first"> camera
+    <option value="second"> enjoy
+    <option value="third"> principal
+    <option value="fourth"> hospital
+    <option value="fifth"> vegetable
+    <option value="sixth"> careful	
+  </select>
+  .
+<br>
+</form>
+    <div ng-switch="wordSix">
+  <div ng-switch-when="fifth">
+	 <div class="alert alert-success">
+    <strong>CORRECT!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="first">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="second">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="third">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourth">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+    <div ng-switch-when="sixth">
+	 <div class="alert alert-danger">
+    <strong>Try again!</strong> 
+  </div>
+  </div>
+</div>
+<p>Do you want to move on to 2nd grade vocabulary words? Click HERE:</p>	
+<a href="secondV.html"> Second Grade Vocab</a>
+<p> To go back to the  vocab level testing menu, click HERE:</p>
+<a href="vocabHome.html"> Vocab Level Testing Selection  </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html">  HOME  </a>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body {
+  background-color: #ffad33 ;
+}
+a:link, a:visited {
+  background-color: #5da4ff;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h3{
+  text-align: center;
+  color: red;
+}
+</style>
+  </head>
+<body>
+<h2> Welcome to the 4th grade reading comprehension test. </h2> 
+<h4> Story One: Friction </h4>
+<p> 
+Physics is all around us. Physics is the study of things moving.
+An important part of physics involving walking, standing, driving, and many other functions of moving
+is a concept called friction. Friction is the resistance of motion when one object rubs against another. When two objects rub against each other, they cause friction. 
+Friction works against the motion and acts in the opposite direction. 
+Friction is very important, as far as how energy goes because when one object is rubbing together wirh another item, the object starts to slow down.
+A list of good examples of how we measure friction are: wheels on a car, walking on a hill, making a fire, and many more.</p>
+<p>Question 1: Select the statement or statements that are true about friction. There is more than one correct answer.</p>
+<body ng-app="">
+  <form>
+     <p>When two objects rub against each other, they cause friction </p>
+     <input type="checkbox" ng-model="myVar1">
+	 <h1 ng-show="myVar1">CORRECT</h1>
+     <p>When one object is rubbing together wirh another item, the object starts to slow down </p>
+     <input type="checkbox" ng-model="myVar2">
+	 <h1 ng-show="myVar2">CORRECT</h1>
+     <p>Friction acts in the same direction </p>
+     <input type="checkbox" ng-model="myVar3">
+	 <h1 ng-show="myVar3">Try again</h1>
+     <p>Friction is used to measure objects in the water </p>
+     <input type="checkbox" ng-model="myVar4">
+	 <h1 ng-show="myVar4"> Try again </h1>
+     <p>Friction is the resistance of motion. </p>
+     <input type="checkbox" ng-model="myVar5">
+	 <h1 ng-show="myVar5"> CORRECT</h1>
+
+<p> Question 2: On a seperate piece of paper, on the first paragraph, write a short summary about the story.
+    On the second paragraph, come up with your own example of friction and how it connects to how friction works.  </p>
+<p>HINT: a short paragraph is usually between 3-5 sentences.</p>
+
+Question 3: What is the main idea of the story?
+<br>
+  <input type="radio" ng-model="frictionquest" value="frictiona1"> Friction works against the motion and acts in the opposite direction.
+<br>
+  <input type="radio" ng-model="frictionquest" value="frictiona2"> Friction can be applied in everyday life.
+<br>
+  <input type="radio" ng-model="frictionquest" value="frictiona3"> Friction is the resistance of motion when one object rubs against another.
+  <br><br>
+ <h3> <b> Story 1 Results: </b> </h3> 
+
+</form>
+<div ng-switch="frictionquest">
+  <div ng-switch-when="frictiona2">
+       <div class="alert alert-success">
+    <strong> Story 1: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="frictiona1">
+  <div class="alert alert-danger">
+  <strong>  Story 1: Question 3: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="frictiona3">
+  <div class="alert alert-danger">
+  <strong> Story 1: Question 3: Try again!</strong>
+   </div>
+    </div>
+   </div>
+   <h4> Story 2: The Wishing Well</h4>
+   <p>	One time, Paul and his two friends were walking after school to the library to study as usual. Before they got in the library, one of his friends, 
+Marshall, saw this random fountain on the corner of the right side of the library's entrance. It wasn't just any ordinary fountain. It was a fountain that is supposed
+to bring everyone good luck. The specific fountain was called a Wishing Well. What the Wishing Well does is that when you put a coin in, you make a wish. The wish should be something simple.
+The three boys each put a coin in the well and wished for something. Paul wished for a puppy, Marshall wished for a bag of candy, and Danny wished for more friends.
+A week later, everyone got their wish except for Danny. Danny was very confused on why his wish didn't come true.  Paul did remember that Danny was the only person that talked alot about his wish.
+Then, Danny understands. After that, they go in the library and study, and after awhile, they walk home for dinner. </p> 
+<p> Questions: </p>
+<form>
+Question 1: Why do you think Danny's wish didn't come true?
+<br>
+  <input type="radio" ng-model="fourthq1" value="fourtha1"> Nobody wanted to be Danny's friend.
+<br>
+  <input type="radio" ng-model="fourthq1" value="fourtha2">Danny said his wish out loud, while he was putting the coin in the well.
+<br>
+  <input type="radio" ng-model="fourthq1" value="fourtha3"> Danny put the wrong coin in the well.
+  <br><br>
+Question 2: What is the main idea of the story?
+<br>
+  <input type="radio" ng-model="fourthq2" value="fourtha1"> Wishes come true, as long as people don't say them out loud.
+<br>
+  <input type="radio" ng-model="fourthq2" value="fourtha2">Paul wished for a puppy, Marshall wished for a bag of candy, and Danny wished for more friends.
+<br>
+  <input type="radio" ng-model="fourthq2" value="fourtha3"> The three boys each put a coin in the well and wished for something.
+  <br><br>
+  Question 3:  (short answer)Why do you think the fountain is called the Wishing Well? 
+   <h3> <b> Story 2 Results: </b> </h3> 
+</form>
+<div ng-switch="fourthq1">
+  <div ng-switch-when="fourtha2">
+       <div class="alert alert-success">
+    <strong>Story 2:  Question 1: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourtha1">
+  <div class="alert alert-danger">
+  <strong> Story 2: Question 1:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="fourtha3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 1:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<div ng-switch="fourthq2">
+  <div ng-switch-when="fourtha1">
+       <div class="alert alert-success">
+    <strong>Story 2: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fourtha2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2: Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="fourtha3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 2: Try again!</strong>
+   </div>
+    </div>
+   </div>
+<p>Do you want to move on to 5th grade comprehension questions? Click HERE:</p>
+<a href="fifthComp.html"> Fifth Grade Comprehension</a>
+<p>Do you want to go back to third grade comprehension questions? Click HERE:</p>
+<a href="thirdComp.html"> Third Grade Comprehension </a>
+<p>Do you want to go back to 1st and 2nd grade comprehension questions? Click HERE:</p>
+<a href="primaryComp.html"> Primary Years (1st and 2nd) Comprehension</a>
+<p> To go back to the  comprehension test menu, click HERE:</p>
+<a href="compHome.html"> Test Selection </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> HOME </a>
+</body>
+</html>

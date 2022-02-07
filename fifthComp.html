@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body {
+  background-color: #ffc61a;
+}
+a:link, a:visited {
+  background-color: #5da4ff;
+  color: black;
+   border: 4px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h3{
+  text-align: center;
+  color: red;
+}
+</style>
+  </head>
+<body>
+<h2> Welcome to the 5th grade reading comprehension test. </h2> 
+<h4> Story 1: John's History Play </h4>
+<p>
+One day at school, John and his friends got an assignment that they were going to be in a school play. John got excited because he had always wanted to be in a play.
+There were a list of characters to pick from, and a short biography describing each one of them. The list of characters are: George Washington, Paul Revere, William Dawes, the minutemen, Thomas Jefferson, and more.
+Luckilly, the costumes were provided to the kids, so that way, the kids can start preparing for the play. 
+The kids had two weeks to prepare for the play, including trying the costumes on, practicing lines, and knowing how to exit and enter.
+This play is going to be the most significant one, because this is the play about our country gaining its independence, based on 13 original colonies. 
+After two weeks, the kids did the play after school, and lots of adults cheered for the kids and were all proud of them. </p>
+
+<p> Question One: Who do you think the adults were that were cheering for the kids? How do you know? Write on a separate piece of paper. </p>
+<body ng-app="">
+  <form>
+ Question Two: What do you think the word significant means in the story?
+<br>
+  <input type="radio" ng-model="fifths1q2" value="fifths1a1"> important
+<br>
+  <input type="radio" ng-model="fifths1q2" value="fifths1a2"> short
+<br>
+  <input type="radio" ng-model="fifths1q2" value="fifths1a3"> imaginary
+  <br><br>
+ Question Three: Why do you think it was important for the kids to have two weeks to prepare for the play, instead of just one week?
+<br>
+  <input type="radio" ng-model="fifths1q3" value="fifths1a1"> some of the kids are scared
+<br>
+  <input type="radio" ng-model="fifths1q3" value="fifths1a2"> to give them plenty of time to prepare, so the play is done right
+<br>
+  <input type="radio" ng-model="fifths1q3" value="fifths1a3"> to keep everyone waiting
+  <br><br>
+  <h3> <b> Story 1 Results: </b> </h3>
+</form>
+<div ng-switch="fifths1q2">
+  <div ng-switch-when="fifths1a1">
+       <div class="alert alert-success">
+    <strong> Story 1: Question 2: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifths1a2">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="fifths1a3">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 2:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+   
+<div ng-switch="fifths1q3">
+  <div ng-switch-when="fifths1a2">
+       <div class="alert alert-success">
+    <strong> Story 1: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifths1a1">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 3:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="fifths1a3">
+  <div class="alert alert-danger">
+  <strong>Story 1: Question 3:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+
+<h4> Story 2: Water is All Around Us </h4>
+<p>
+Water is all around us. We drink water, we swim in water during the summer at beaches and pools, it rains sometimes, and we take showers and baths.
+What most of us don't know is how water is used and the process it takes for water to keep moving around the Earth. The first step is that water evaporates from the 
+Earth's surface. What that means is that even when there once was water, and then it disappears later on, it's still there, but that water is now gas.
+It happends the most often during hot days, and it makes the process go faster.
+That gas is called water vapor.
+The second step is that the water vapor mentioned earlier turns into clouds in the sky. That is called condensation. This is when that vapor turns to just drops of water.
+ Sometimes that vapor turns to clouds, and some of it turns to dew in the grass. The third and last step is that when the water has formed, it transfers back to the Earth and comes out, 
+calling it precipitation. Precipitation can be any form of water falling in the sky like snow, rain, or hail. With the help of the water cycle, this is why most people have access to water all the time.
+</p>  
+<p>Question One: Sequence the steps in order of the water cycle</p>
+<form>
+  Event One:
+  <select ng-model="modelone">
+    <option value="">
+    <option value="first"> Water evaporates from Earth's surface.
+    <option value="second"> Water vapor turns into clouds in the sky
+    <option value="third"> When the water has formed, it transfers back to the Earth and comes out of the sky, forming precipitation.
+  </select>
+</form>
+<div ng-switch="modelone">
+  <div ng-switch-when="first">
+     <h4>CORRECT</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>Try Again</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>Try again</h4>
+  </div>
+</div>
+  Event Two:
+  <select ng-model="modeltwo">
+   <option value="">
+    <option value="first"> Water evaporates from Earth's surface.
+    <option value="second"> Water vapor turns into clouds in the sky
+    <option value="third"> When the water has formed, it transfers back to the Earth and comes out of the sky, forming precipitation.
+  </select>
+
+
+<div ng-switch="modeltwo">
+  <div ng-switch-when="first">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>CORRECT</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>Try again</h4>
+  </div>
+</div>
+ Event Three:
+  <select ng-model="modelthree">
+   <option value="">
+    <option value="first">  Water evaporates from Earth's surface.
+    <option value="second"> Water vapor turns into clouds in the sky
+    <option value="third">  When the water has formed, it transfers back to the Earth and comes out of the sky, forming precipitation.
+  </select>
+
+<div ng-switch="modelthree">
+  <div ng-switch-when="first">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="second">
+     <h4>Try again</h4>
+  </div>
+  <div ng-switch-when="third">
+     <h4>CORRECT</h4>
+  </div>
+</div>
+<p>Quesiton Two: Why do you think during hot days, water disappears faster? Write on a separate sheet of paper.</p>
+<p>Question Three: What is the main idea of this story?</p>
+<br>
+  <input type="radio" ng-model="fifths2q3" value="fifths2a1"> Water on Earth gets reused because it rotates through a cycle where water comes out, gets vaporized, and turns to droplets.
+<br>
+  <input type="radio" ng-model="fifths2q3" value="fifths2a2"> Vapor turns to just drops of water.
+<br>
+  <input type="radio" ng-model="fifths2q3" value="fifths2a3"> Water is important.
+  <br><br>
+<h3> <b> Story 2 Results: </b> </h3>
+<div ng-switch="fifths2q3">
+  <div ng-switch-when="fifths2a1">
+       <div class="alert alert-success">
+    <strong> Story 2: Question 3: Correct!</strong> 
+  </div>
+  </div>
+  <div ng-switch-when="fifths2a2">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 3:  Try again!</strong>
+  </div>
+  </div>
+  <div ng-switch-when="fifths2a3">
+  <div class="alert alert-danger">
+  <strong>Story 2: Question 3:  Try again!</strong>
+   </div>
+    </div>
+   </div>
+<p>Do you want to move on to 6th grade comprehension questions? Click HERE:</p>
+<a href="sixthComp.html"> Sixth Grade Comprehension</a>
+<p>Do you want to go back to fourth grade comprehension questions? Click HERE:</p>
+<a href="fourthComp.html"> Fourth Grade Comprehension </a>
+<p>Do you want to go back to third grade comprehension questions? Click HERE:</p>
+<a href="thirdComp.html"> Third Grade Comprehension </a>
+<p>Do you want to go back to 1st and 2nd grade comprehension questions? Click HERE:</p>
+<a href="primaryComp.html"> Primary Years (1st and 2nd) Comprehension</a>
+<p> To go back to the  comprehension test menu, click HERE:</p>
+<a href="compHome.html"> Test Selection </a>
+<p> To go back to home, click HERE: </p>
+<a href="index.html"> HOME </a>
+</body>
+</html>

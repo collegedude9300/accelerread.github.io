@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+body {
+  background-color: #66d9ff;
+}
+a:link, a:visited {
+  background-color: #BFFF00;
+  color: black;
+   border: 2px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+  </head>
+<body>
+<h2> Welcome to Sentence  Writing!</h2>
+<p> Use the pictures below as hints to help you understand the sentences in the stories.  </p>
+<h1>Story One: </h1>
+<img src="pictureone.jpg">
+<p> One day, after school, there were two young boys, Sean, and Connor, who were walking home. As they were walking home, they saw a pumpkin field with three carved pumpkins.
+ 'I wonder which pumpkin I should get', said Connor. 'I dont know. They are all amazing!' said Sean. Soon, they each got one pumpkin, so they can carve their own pumpkins.</p>
+<br>
+<button onclick="storyOne()">Picture One Prompt</button>
+<p id="demo1O"></p>
+<p id="demo2O"></p>
+<p id="demo3O"></p>
+<p id="demo4O"></p>
+<script>
+  alert("Hello, welcome to Sentence Writing, a game where you get a few pictures, and some sentences below the pictures.");
+alert ("There will be some description questions, and some higher order thinking questions about the sentences.");
+function storyOne() 
+{
+let resultOne;
+let resultTwo;
+let resultThree;
+let resultFour;
+alert("Story 1");
+//FIRST QUESTION
+  let respOne_One = prompt("What did you picture for the young boys walking home? Write 2-4 sentences. ");
+  if (respOne_One == null || respOne_One == "") 
+  {
+    resultOne = "User cancelled the prompt.";
+	alert(resultOne);
+  } 
+  else 
+  {
+    resultOne = respOne_One;
+  }
+     document.getElementById("demo1O").innerHTML = respOne_One;
+	 //SECOND QUESTION
+	  let respTwo_One = prompt("What did you picture for the boys buying the pumpkins? Include a brief description of the pumpkins.");
+  if (respTwo_One == null || respTwo_One == "") 
+  {
+    resultTwo = "User cancelled the prompt.";
+	alert(resultTwo);
+  }
+  else 
+  {
+    resultTwo = respTwo_One;
+  } 
+	 document.getElementById("demo2O").innerHTML = respTwo_One; 
+  //THIRD QUESTION
+    let respThree_One = prompt("Why do you think it would be better for the boys to each have their own pumpkin, rather then share one? ");
+  if (respThree_One == null || respThree_One == "") 
+  {
+    resultThree = "User cancelled the prompt.";
+	alert(resultThree);
+  } 
+  else 
+  {
+    resultThree = respThree_One;
+  }
+     document.getElementById("demo3O").innerHTML = respThree_One;
+	 //FOURTH QUESTION
+	 let respFour_One = prompt("What do you think will happen next once the boys get home with their pumpkins? ");
+  if (respFour_One == null || respFour_One == "") 
+  {
+    resultFour = "User cancelled the prompt.";
+	alert(resultFour);
+  } 
+  else 
+  {
+    resultFour = respFour_One;
+  }
+     document.getElementById("demo4O").innerHTML = respFour_One; 
+	 }
+</script>
+<h1>Story #2: </h1>
+<img src="picturetwo.jpg">
+<p> One cloudy day, three elephants were walking out in the jungle. As they were walking, they have been hunting for food, but there has not been any food.
+Then, as they bend over, they smell something from the ground and started munching on something green. It tasted good. Hopefully, it will be taller tomorrow, so they can eat some more of it.
+</p>
+<br>
+<button onclick="storyTwo()">Story Two Prompt</button>
+<p id="demo1Two"></p>
+<p id="demo2Two"></p>
+<p id="demo3Two"></p>
+<p id="demo4Two"></p>
+<script>
+function storyTwo() 
+{
+let resultOne;
+let resultTwo;
+let resultThree;
+let resultFour;
+alert("Story 2");
+//FIRST QUESTION
+  let respOne_Two = prompt("What did you picture for both the three elephants, and the jungle? Write 2-4 sentences. ");
+  if (respOne_Two == null || respOne_Two == "") 
+  {
+    resultOne = "User cancelled the prompt.";
+	alert(resultOne);
+  } 
+  else 
+  {
+    resultOne = respOne_Two;
+  }
+     document.getElementById("demo1Two").innerHTML = respOne_Two;
+	 //SECOND QUESTION
+	  let respTwo_Two = prompt("What did you picture for the elephants trying to  hunt the food?");
+  if (respTwo_Two == null || respTwo_Two == "") 
+  {
+    resultTwo = "User cancelled the prompt.";
+	alert(resultTwo);
+  }
+  else 
+  {
+    resultTwo = respTwo_Two;
+  } 
+	 document.getElementById("demo2Two").innerHTML = respTwo_Two; 
+  //THIRD QUESTION
+let respThree_Two = prompt("What was the green thing the elephants were munching on, and how did you know?");
+  if (respThree_Two == null || respThree_Two == "") 
+  {
+    resultThree = "User cancelled the prompt.";
+	alert(resultThree);
+  } 
+  else 
+  {
+    resultThree = respThree_Two;
+  }
+     document.getElementById("demo3Two").innerHTML = respThree_Two;  
+	 //FOURTH QUESTION
+let respFour_Two = prompt("Why do you think it's important for the elephants to eat the grass when it's tall?");
+  if (respFour_Two == null || respFour_Two == "") 
+  {
+    resultFour = "User cancelled the prompt.";
+	alert(resultFour);
+  } 
+  else 
+  {
+    resultFour = respFour_Two;
+  }
+     document.getElementById("demo4Two").innerHTML = respFour_Two;
+}  	 
+</script>
+
+<h1>Story #3: </h1>
+<img src="picturethree.jpg">
+<p>
+One morning, when the sun was rising out on the field, there was a house with some village men. As the villagers were getting ready for the day, they were discussing their hunting plans for their meal of the morning.
+Then, they saw some tall brown deer and hunted them carefully and slowly. After they were done, they prepared the meal and ate it.</p>
+<br>
+<button onclick="storyThree()">Story Three Prompt</button>
+<p id="demo1Three"></p>
+<p id="demo2Three"></p>
+<p id="demo3Three"></p>
+<p id="demo4Three"></p>
+<script>
+function storyThree() 
+{
+let resultOne;
+let resultTwo;
+let resultThree;
+let resultFour;
+alert("Story 3");
+//FIRST QUESTION
+  let respOne_Three = prompt("What did you picture for the villagers in the house?");
+  if (respOne_Three == null || respOne_Three == "") 
+  {
+    resultOne = "User cancelled the prompt.";
+	alert(resultOne);
+  } 
+  else 
+  {
+    resultOne = respOne_Three;
+  }
+     document.getElementById("demo1Three").innerHTML = respOne_Three;
+//SECOND QUESTION
+	  let respTwo_Three = prompt("What did you picture for the deer?");
+  if (respTwo_Three == null || respTwo_Three == "") 
+  {
+    resultTwo = "User cancelled the prompt.";
+	alert(resultTwo);
+  }
+  else 
+  {
+    resultTwo = respTwo_Three;
+  } 
+	 document.getElementById("demo2Three").innerHTML = respTwo_Three; 
+// THIRD QUESTION
+let respThree_Three = prompt("What did you picture for the villagers hunting the deer?");
+  if (respThree_Three == null || respThree_Three == "") 
+  {
+    resultThree = "User cancelled the prompt.";
+	alert(resultThree);
+  } 
+  else 
+  {
+    resultThree = respThree_Three;
+  }
+     document.getElementById("demo3Three").innerHTML = respThree_Three;
+// FOURTH QUESTION
+let respFour_Three = prompt("What meal do you think the story was talking about, and how do you know?");
+  if (respFour_Three == null || respFour_Three == "") 
+  {
+    resultFour = "User cancelled the prompt.";
+	alert(resultFour);
+  } 
+  else 
+  {
+    resultFour = respFour_Three;
+  }
+     document.getElementById("demo4Three").innerHTML = respFour_Three;
+	 }
+</script>
+<h1>Story #4: </h1>
+<img src="picturefour.jpg">
+<p>
+One winter day, a group of snow crew people were doing a mission for their Snow Patrol Club down in Wallatown. Their mission of the day was to climb
+the Wallatown mountain, which is very streneuous and very tough. Also if they are not careful, it could be harmful. They made sure they had plenty of supplies with them,
+including extra clothing, so that way, they could survive.  </p>
+<br>
+<button onclick="storyFour()">Story Four Prompt</button>
+<p id="demo1Four"></p>
+<p id="demo2Four"></p>
+<p id="demo3Four"></p>
+<p id="demo4Four"></p>
+<script>
+function storyFour() 
+{
+let resultOne;
+let resultTwo;
+let resultThree;
+let resultFour;
+alert("Story 4");
+//FIRST QUESTION
+  let respOne_Four = prompt("What did you picture for the snow crew?");
+  if (respOne_Four == null || respOne_Four == "") 
+  {
+    resultOne = "User cancelled the prompt.";
+	alert(resultOne);
+  } 
+  else 
+  {
+    resultOne = respOne_Four;
+  }
+     document.getElementById("demo1Four").innerHTML = respOne_Four;
+//SECOND QUESTION
+	  let respTwo_Four = prompt("What did you picture for the mountain being streneuous?");
+  if (respTwo_Four == null || respTwo_Four == "") 
+  {
+    resultTwo = "User cancelled the prompt.";
+	alert(resultTwo);
+  }
+  else 
+  {
+    resultTwo = respTwo_Four;
+  } 
+	 document.getElementById("demo2Four").innerHTML = respTwo_Four; 
+// THIRD QUESTION
+let respThree_Four = prompt("In the context of the story, what do you think the word streneuous means?");
+  if (respThree_Four == null || respThree_Four == "") 
+  {
+    resultThree = "User cancelled the prompt.";
+	alert(resultThree);
+  } 
+  else 
+  {
+    resultThree = respThree_Four;
+  }
+     document.getElementById("demo3Four").innerHTML = respThree_Four;
+// FOURTH QUESTION
+let respFour_Four = prompt("What do you think would happen if the snow crew did not have enough clothing?");
+  if (respFour_Four == null || respFour_Four == "") 
+  {
+    resultFour = "User cancelled the prompt.";
+	alert(resultFour);
+  } 
+  else 
+  {
+    resultFour = respFour_Four;
+  }
+     document.getElementById("demo4Four").innerHTML = respFour_Four;
+	 }
+</script>
+<br><br>
+<p> Do you feel like you need to take a step back? If so, click on the button below to go to "Picture Writing"</p>
+<a href="picturewriting.html"> <b> Picture Writing </b></a> <br><br>
+<a href="games.html"> <b> Go Back to Games </b></a>
+<br><br>
+<a href="index.html"> <b> Go Back to Home </b></a>
+</body>
+</html>
